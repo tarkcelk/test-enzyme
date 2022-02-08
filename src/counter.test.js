@@ -4,6 +4,7 @@
 import React from 'react';
 import {mount} from 'enzyme';
 import Counter from './counter';
+import {isAllUpperCase} from './utils';
 
 describe('counter component tests with enzyme', () => {
   let wrapper;
@@ -32,5 +33,3 @@ describe('counter component tests with enzyme', () => {
 
   it('should show the counter number at some text', () => {});
 });
-
-const isAllUpperCase = (string = '') => string.toUpperCase() === string;
