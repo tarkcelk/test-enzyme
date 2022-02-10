@@ -1,1 +1,5 @@
-export const isAllUpperCase = (string = '') => string.toUpperCase() === string;
+export const isAllUpperCase = (string = '') => {
+  if (!string) return false;
+
+  return string.toUpperCase() === string;
+};
